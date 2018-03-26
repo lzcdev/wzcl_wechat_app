@@ -1,0 +1,26 @@
+<!--pages/index/index.wxml-->
+<!-- <text>pages/index/index.wxml</text> -->
+ <view class='bg'> 
+  <image class='header_img' src='../../images/carheader.png'></image>
+  <view class='carlist' bindtap='goWfList'>
+    <view class='car_num'>浙J · UU249</view>
+    <view class='car_msg'>
+      <view class='item'>
+        <view class='item_num'>0</view>
+        <view>违章记录</view>
+      </view>
+      <view class='item'>
+        <view class='item_num'>0</view>
+        <view>待处理</view> 
+      </view>       
+      <view class='item'>
+        <view class='item_num'>0</view>
+        <view>未缴款</view>
+      </view>      
+    </view>
+    <view class='car_bottom'>
+      立即处理
+    </view>
+  </view>
+  <button type="primary" bindtap='addCar'>添加车辆</button>
+</view> 

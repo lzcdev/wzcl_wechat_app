@@ -1,0 +1,7 @@
+<!--pages/wfList/wfList.wxml-->
+<!-- <text>pages/wfList/wfList.wxml</text> -->
+
+<view class='no_wf'>
+  <image src='../../images/wwzjj.png'></image>
+  <view>恭喜你，当前没有违章记录</view>
+</view>

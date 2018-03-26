@@ -1,0 +1,17 @@
+/* pages/wfList/wfList.wxss */
+
+.no_wf {
+  margin-top: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.no_wf image {
+  width: 120rpx;
+  height: 120rpx;
+}
+.no_wf view {
+  margin-top: 40rpx;
+}

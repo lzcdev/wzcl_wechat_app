@@ -1,0 +1,57 @@
+/* pages/index/index.wxss */
+.header_img {
+  margin-top: 0;
+  /* background: red; */
+  width: 100%;
+  height: 300rpx;
+}
+
+.bg button{
+  margin-top: 40rpx;
+  width: 90%;
+  background: #0099ff;
+}
+
+.carlist {
+  margin-top: 30rpx;
+  margin: 0 auto;
+  width: 90%;
+  height: 300rpx;
+  border: 0.5rpx #cccccc solid;
+  border-radius:6rpx; 
+}
+.carlist .car_num {
+  height: 70rpx;
+  color: #0099ff;
+  display: flex;
+  align-items: center;
+  margin-left: 10rpx;
+}
+.carlist .car_msg {
+  height: 160rpx;
+  background: #0099ff;
+  display: flex;
+  justify-content:space-around;
+}
+.carlist .car_msg .item {
+  padding-bottom: 10rpx;
+  /* background: green; */
+  color: white;
+  font: 10rpx;
+}
+.carlist .car_msg .item .item_num {
+  margin-top: 20rpx;
+  text-align: center;
+}
+
+.carlist .car_bottom {
+   color: #0099ff;
+   display: flex; 
+   justify-content: center;  
+   align-items: center; 
+}
+
+
+
+
+
