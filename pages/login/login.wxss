@@ -1,0 +1,49 @@
+/* pages/login/login.wxss */
+
+.content {
+  position: fixed;
+  background: #F3F3F3;
+  width: 100%;
+  height: 100%;
+  /* border: 4rpx solid green;
+  box-sizing: border-box; */
+}
+.content .white-bg {
+  margin-top: 20rpx;
+  background: white;
+}
+
+.white-bg .line {
+  width: 100%;
+  height: 1rpx;
+  background: lightgray;
+}
+
+.cell {
+  display: flex;
+   align-items: center;
+}
+.icon {
+  width: 40rpx;
+  height: 40rpx;
+  flex-direction: row;
+}
+
+.cell image {
+   margin-left: 20rpx; 
+}
+
+.cell input {
+  margin-left: 20rpx; 
+  height: 100rpx;
+  /* background: yellow; */
+}
+
+.content .easy-login {
+  margin-top: 20rpx; 
+  margin-left: 500rpx;
+  /* background: pink; */
+  font-size: 28rpx; 
+  color: green;
+  width: 250rpx;
+}
