@@ -8,13 +8,16 @@
 
 .bg button{
   margin-top: 40rpx;
+  margin-bottom: 40rpx;
   width: 90%;
   background: #0099ff;
+
 }
 
 .carlist {
+  margin-left: 5%;
   margin-top: 30rpx;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   width: 90%;
   height: 300rpx;
   border: 0.5rpx #cccccc solid;
