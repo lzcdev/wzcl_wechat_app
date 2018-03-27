@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/addCar/addCar",
-    "pages/wfList/wfList"
+    "pages/wfList/wfList",
+    "pages/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",

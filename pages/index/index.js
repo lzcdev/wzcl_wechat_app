@@ -11,6 +11,11 @@ Page({
   data: {
     carList: []
   },
+  goLogin: function (e) {
+    wx.navigateTo({
+      url: '../login/login',
+    })
+  },
   addCar: function(e) {
     wx.navigateTo({
       url: '../addCar/addCar',
@@ -27,7 +32,7 @@ Page({
    */
   onLoad: function (options) {
     // 获取车辆列表
-    this.getCarList();
+    // this.getCarList();
 
   },
 
