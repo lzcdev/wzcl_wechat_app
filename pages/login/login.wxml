@@ -6,16 +6,26 @@
   <view class='white-bg'>
     <view class='cell'>
       <image class='icon phone' src='../../images/icon_phone.png'></image>
-     <input class="phoneNum-input" maxlength='11' type="number" placeholder="手机号" />
+     <input bindinput="bindMobieInput" class="phoneNum-input" maxlength='11' type="number" placeholder="手机号" />
     </view>
     <view class='line'></view>
     <view class='cell'>
       <image class='icon password' src='../../images/icon_password.png'></image>
-      <input class="weui-input" password type="text" placeholder="密码" />
+      <input bindinput='bindPasswordInput' class="weui-input" password type="text" placeholder="密码" />
     </view>
   </view>
 
   <!-- 手机号快捷登录 -->
   <view class='easy-login'>手机号快捷登录 ></view>
-
+  <button class='custom_button' type="primary" hover-class='none' 
+  bindtap='login'>登录</button>
+  
+  <view class='bottom-content'>
+  <!-- 找回密码 -->
+  <view class='find-password item'>找回密码</view>
+  <!-- 立即出册 -->
+  <view class='register item'>立即注册</view>
+  
+  </view>
+  
 </view>

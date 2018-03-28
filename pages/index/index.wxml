@@ -23,5 +23,5 @@
       立即处理
     </view>
   </view>
-  <button type="primary" hover-class='none' bindtap='addCar'>添加车辆</button>
+  <button class='custom_button' type="primary" hover-class='none' bindtap='addCar'>添加车辆</button>
 </view> 

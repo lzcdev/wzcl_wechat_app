@@ -6,13 +6,13 @@
   height: 300rpx;
 }
 
-.bg button{
+  .bg button{
   margin-top: 40rpx;
   margin-bottom: 40rpx;
   width: 90%;
   background: #0099ff;
 
-}
+}  
 
 .carlist {
   margin-left: 5%;

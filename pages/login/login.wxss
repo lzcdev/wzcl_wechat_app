@@ -21,7 +21,7 @@
 
 .cell {
   display: flex;
-   align-items: center;
+  align-items: center;
 }
 .icon {
   width: 40rpx;
@@ -46,4 +46,28 @@
   font-size: 28rpx; 
   color: green;
   width: 250rpx;
+}
+
+.content button {
+  margin-top: 40rpx;
+  margin-bottom: 40rpx; 
+  width: 90%;
+  background-color: #0099ff;
+}
+
+.content .bottom-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.content .bottom-content .find-password {
+  /* border: solid gray 2rpx; */
+   border-right: solid 1rpx gray; 
+}
+.content .bottom-content .item {
+   /* background: pink;  */
+  font-size: 28rpx; 
+  color: gray;
+  width: 250rpx;
+  text-align: center;
 }

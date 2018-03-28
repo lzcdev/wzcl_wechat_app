@@ -1,7 +1,7 @@
 // pages/index/index.js
-'use strict'
-var network = require('../../utils/network.js')
-
+// 'use strict'
+const network = require('../../utils/network.js')
+const util = require('../../utils/util')
 
 Page({
 
@@ -12,14 +12,28 @@ Page({
     carList: []
   },
   goLogin: function (e) {
-    wx.navigateTo({
-      url: '../login/login',
-    })
+    try {
+      console.log('清除缓存成功')
+      wx.removeStorageSync('UserModel')
+    } catch (e) {
+      // Do something when catch error
+    }
   },
+  // 添加车辆
   addCar: function(e) {
-    wx.navigateTo({
-      url: '../addCar/addCar',
-    })
+    var hasLogin = util.hasLogin()
+    if (hasLogin) {
+      console.log('已登录')
+      wx.navigateTo({
+        url: '../addCar/addCar',
+      })
+    } else {
+      console.log('未登录')
+      wx.navigateTo({
+        url: '../login/login',
+      })
+    }
+
   },
   goWfList: function(e) {
     console.log('违法处理界面')
