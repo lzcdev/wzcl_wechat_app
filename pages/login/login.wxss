@@ -30,15 +30,35 @@
 }
 
 .cell image {
-   margin-left: 20rpx; 
+   margin-left: 40rpx; 
 }
 
 .cell input {
   margin-left: 20rpx; 
   height: 100rpx;
+  width: 400rpx;
   /* background: yellow; */
 }
 
+.cell .line_little {
+  width: 1rpx;
+  height: 60rpx;
+  background-color: lightgray;
+}
+
+.cell .get_yzm {
+  background-color: #0099ff; 
+  color: white;
+  border-radius: 4rpx;
+  font-size: 24rpx;
+  width: 160rpx;
+  height: 60rpx;
+  margin-left: 40rpx;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .content .easy-login {
   margin-top: 20rpx; 
   margin-left: 500rpx;
@@ -70,4 +90,45 @@
   color: gray;
   width: 250rpx;
   text-align: center;
+}
+
+.content .agree-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+}
+/* .content .agree-view checkbox {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 20rpx;
+} */
+
+.content .agree-view .agreement {
+  margin-left: 20rpx;
+  color: orange;
+}
+
+/*  重写 checkbox 样式  */
+checkbox .wx-checkbox-input{
+   border-radius: 50%;
+   width: 40rpx;
+   height: 40rpx;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+   border: none;
+   background: green;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+   border-radius: 50%;
+   width: 40rpx;
+   height: 40rpx;
+   line-height: 40rpx;
+   text-align: center;
+   font-size:30rpx;
+   color:#fff;
+   background: transparent;
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
 }

@@ -14,7 +14,7 @@ Page({
   goLogin: function (e) {
     try {
       console.log('清除缓存成功')
-      wx.removeStorageSync('UserModel')
+      wx.removeStorageSync('UserMsg')
     } catch (e) {
       // Do something when catch error
     }
@@ -46,14 +46,14 @@ Page({
    */
   onLoad: function (options) {
     // 获取车辆列表
-    // this.getCarList();
+    this.getCarList();
 
   },
 
   getCarList: function(e) {
     var that = this;
     network.get({
-      url: '/go_web/getUserVehList',
+      url: '/getUserVehList',
       params: {},
       success: res => {
         console.log(res.data)

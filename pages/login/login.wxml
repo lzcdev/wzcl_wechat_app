@@ -7,25 +7,33 @@
     <view class='cell'>
       <image class='icon phone' src='../../images/icon_phone.png'></image>
      <input bindinput="bindMobieInput" class="phoneNum-input" maxlength='11' type="number" placeholder="手机号" />
+     <view class='line_little'></view>
+     <view bindtap="{{isClick?'get_yzm':''}}" class='get_yzm'>{{yzm}}</view>
     </view>
     <view class='line'></view>
     <view class='cell'>
       <image class='icon password' src='../../images/icon_password.png'></image>
-      <input bindinput='bindPasswordInput' class="weui-input" password type="text" placeholder="密码" />
+      <input bindinput='bindPasswordInput' class="weui-input" maxlength='4' type="number" placeholder="验证码" />
     </view>
   </view>
 
   <!-- 手机号快捷登录 -->
-  <view class='easy-login'>手机号快捷登录 ></view>
+  <!-- <view class='easy-login'>手机号快捷登录 ></view> -->
   <button class='custom_button' type="primary" hover-class='none' 
   bindtap='login'>登录</button>
   
-  <view class='bottom-content'>
-  <!-- 找回密码 -->
-  <view class='find-password item'>找回密码</view>
-  <!-- 立即出册 -->
-  <view class='register item'>立即注册</view>
-  
+  <view class='agree-view'>
+    <checkbox checked='true' ></checkbox>
+    <view>我已阅读并同意</view>
+    <view class='agreement' bindlongtap='goAgreement'>《口袋车管用户服务协议》</view>
   </view>
+  <!-- <view class='bottom-content'>
+  <!-- 找回密码 -->
+  <!-- <view class='find-password item'>找回密码</view> -->
+  <!-- 立即出册 -->
+  <!-- <view class='register item'>立即注册</view> -->
   
+  <!-- </view> -->
+  <!-- <web-view src="https://mp.weixin.qq.com/"></web-view> -->
+
 </view>
