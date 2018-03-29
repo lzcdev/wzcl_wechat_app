@@ -4,7 +4,8 @@
     "pages/logs/logs",
     "pages/addCar/addCar",
     "pages/wfList/wfList",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/webview/webview"
   ],
   "window": {
     "backgroundTextStyle": "light",
