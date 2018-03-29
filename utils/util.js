@@ -71,7 +71,7 @@ const getSystemInfoSync = msg => {
 // 已登录
 const hasLogin = () => {
   try {
-    var value = wx.getStorageSync('UserModel')
+    var value = wx.getStorageSync('UserMsg')
     if (value) {
       // Do something with return value
       return true
@@ -83,11 +83,15 @@ const hasLogin = () => {
   }
 }
 
-
+// 获取token
+const getToken = () => {
+  return wx.getStorageSync('UserMsg').token
+}
 
 module.exports = {
   formatTime: formatTime,
   getSystemInfo: getSystemInfo,
   getSystemInfoSync: getSystemInfoSync,
-  hasLogin: hasLogin
+  hasLogin: hasLogin,
+  getToken: getToken
 }

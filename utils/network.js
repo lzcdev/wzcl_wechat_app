@@ -1,3 +1,5 @@
+const util = require('util')
+
 var baseUrl = "https://api.lujingkeji.com/go_web";
 
 var requestHandler = {
@@ -22,14 +24,14 @@ function post(requestHandler) {
 function request(method, requestHandler) {
   var params = requestHandler.params
   var url = requestHandler.url
-
+  // console.log(params)
   wx.request({
     url: baseUrl + url,
     data: params,
     method: method,
     header: {
       'content-type': 'application/json',
-      'XBToken': 'lsOLXbNDThGyGGHGZx/pUL7zz6C6UlgOUOlAioNfah8='
+      'XBToken': util.getToken()
     },
     success: function(res) {
       if (res.statusCode == 518) {
